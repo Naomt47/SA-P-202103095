@@ -1,0 +1,50 @@
+Table CI {
+  id_ci INTEGER [primary key, increment]
+  nombre_ci VARCHAR(255) [unique, not null]
+  id_tipo_ci INTEGER [ref: > Tipo_CI.id_tipo_ci]
+  descripcion TEXT
+  numero_serie VARCHAR(100)
+  version VARCHAR(50)
+  fecha_adquisicion DATE
+  estado_actual VARCHAR(50)
+  ubicacion_fisica VARCHAR(255)
+  propietario_responsable VARCHAR(255)
+  niveles_seguridad VARCHAR(50)
+  cumplimiento VARCHAR(50)
+  estado_configuracion VARCHAR(50)
+  numero_licencia VARCHAR(100)
+  fecha_vencimiento DATE
+  ambiente VARCHAR(10) [not null]
+}
+
+Table Tipo_CI {
+  id_tipo_ci INTEGER [primary key, increment]
+  nombre_tipo VARCHAR(50) [unique, not null]
+}
+
+Table Relacion_CI {
+  id_relacion INTEGER [primary key, increment]
+  id_ci_origen INTEGER [ref: > CI.id_ci]
+  id_ci_destino INTEGER [ref: > CI.id_ci]
+  tipo_relacion VARCHAR(50)
+}
+
+Table Auditoria {
+  id_auditoria INTEGER [primary key, increment]
+  id_ci INTEGER [ref: > CI.id_ci]
+  fecha_cambio DATETIME [not null]
+  descripcion_cambio TEXT
+  usuario VARCHAR(100) [not null]
+}
+
+Table Documentacion {
+  id_documentacion INTEGER [primary key, increment]
+  id_ci INTEGER [ref: > CI.id_ci]
+  enlace_documentacion VARCHAR(255) [not null]
+}
+
+Table Incidentes_Problemas {
+  id_incidente_problema INTEGER [primary key, increment]
+  id_ci INTEGER [ref: > CI.id_ci]
+  enlace_incidente_problema VARCHAR(255) [not null]
+}
