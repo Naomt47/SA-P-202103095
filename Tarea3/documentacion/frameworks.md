@@ -1,3 +1,6 @@
+[Regresar](../README.md)
+
+
 # Herramientas Utilizadas
 
 El desarrollo del CMDB se basó en MySQL como sistema de gestión de bases de datos y Node.js como entorno de ejecución para el backend.
@@ -12,3 +15,6 @@ El desarrollo del CMDB se basó en MySQL como sistema de gestión de bases de da
 - El uso de `async/await` en `ciController.js` y `relacionController.js` simplifica la gestión de operaciones asíncronas con la base de datos.
 - La estructura modular del proyecto (controladores, configuración de base de datos, etc.) aprovecha la flexibilidad de Node.js para organizar el código de manera clara y mantenible.
 - Node.js se integra fácilmente con MySQL a través de bibliotecas como `mysql2`, que soporta consultas parametrizadas para prevenir inyecciones SQL, como se implementó en `ciController.js` y `seed.js`.
+
+
+[Regresar](../README.md)

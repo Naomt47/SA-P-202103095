@@ -1,4 +1,4 @@
-[Regresar](../README.md)
+[Regresar](../../README.md)
 
 # Diseño de Base de Datos
 
@@ -31,4 +31,4 @@ El modelo consta de las siguientes tablas:
      - Los campos opcionales permiten flexibilidad para diferentes tipos de CIs, y las validaciones en el controlador (`ciController.js`) aseguran que los campos obligatorios por tipo (por ejemplo, `numero_serie` para Hardware) se proporcionen.
      - Esto simplifica las operaciones CRUD y reduce la cantidad de uniones (JOINs) necesarias en las consultas.
 
-[Regresar](../README.md)
+[Regresar](../../README.md)

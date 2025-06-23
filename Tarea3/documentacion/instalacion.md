@@ -1,3 +1,5 @@
+[Regresar](../README.md)
+
 # Instalación
 
 ## Requisitos Previos
@@ -57,3 +59,6 @@
   ```bash
   npm test
   ```
+
+
+[Regresar](../README.md)

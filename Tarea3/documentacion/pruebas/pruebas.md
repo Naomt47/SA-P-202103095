@@ -1,3 +1,6 @@
+[Regresar](../../README.md)
+
+
 # Pruebas de Integración
 
 Las pruebas de integración del proyecto CMDB aseguran que los endpoints de la API funcionen correctamente con la base de datos MySQL. Se utiliza **Jest** como herramienta de pruebas, junto con **Supertest** para realizar solicitudes HTTP a la API.
@@ -32,3 +35,6 @@ Las pruebas de integración del proyecto CMDB aseguran que los endpoints de la A
 ### Reportes
 
 ![logs](reportes.png)
+
+
+[Regresar](../../README.md)
