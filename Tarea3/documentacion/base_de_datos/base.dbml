@@ -5,16 +5,16 @@ Table CI {
   descripcion TEXT
   numero_serie VARCHAR(100)
   version VARCHAR(50)
-  fecha_adquisicion DATE
-  estado_actual VARCHAR(50)
+  fecha_adquisicion DATETIME 
+  estado_actual ENUM('Activo', 'Inactivo', 'En Mantenimiento', 'Retirado')
   ubicacion_fisica VARCHAR(255)
   propietario_responsable VARCHAR(255)
-  niveles_seguridad VARCHAR(50)
-  cumplimiento VARCHAR(50)
-  estado_configuracion VARCHAR(50)
+  niveles_seguridad ENUM('Alto', 'Medio', 'Bajo')
+  cumplimiento ENUM('Cumple', 'No Cumple', 'Pendiente')
+  estado_configuracion ENUM('Aprobado', 'Pendiente', 'Rechazado')
   numero_licencia VARCHAR(100)
   fecha_vencimiento DATE
-  ambiente VARCHAR(10) [not null]
+  ambiente ENUM('DEV', 'QA', 'PROD') [not null]
 }
 
 Table Tipo_CI {
@@ -31,7 +31,8 @@ Table Relacion_CI {
 
 Table Auditoria {
   id_auditoria INTEGER [primary key, increment]
-  id_ci INTEGER [ref: > CI.id_ci]
+  id_ci INTEGER [null]
+  nombre_ci VARCHAR(255)
   fecha_cambio DATETIME [not null]
   descripcion_cambio TEXT
   usuario VARCHAR(100) [not null]

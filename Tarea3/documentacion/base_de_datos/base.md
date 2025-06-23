@@ -3,7 +3,7 @@
 # Diseño de Base de Datos
 
 ## Diagrama Entidad Relación
-![](./imgs/diagramaER.jpeg)
+![](./imgs/diagramaER.png)
 
 
 
