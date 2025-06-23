@@ -26,7 +26,7 @@ El modelo consta de las siguientes tablas:
      - La desnormalización con `nombre_ci` reduce la necesidad de consultas adicionales a `CI` para obtener el nombre, mejorando el rendimiento en consultas de auditoría.
 2. **Campos opcionales en `CI`**:
    - La tabla `CI` incluye múltiples campos opcionales (`descripcion`, `numero_serie`, `version`, etc.) que podrían haberse normalizado en tablas separadas (por ejemplo, una tabla para atributos específicos de Hardware o Software). Sin embargo, se optó por mantenerlos en una sola tabla.
-   - **Justificación**:
+   - **Razones**:
      - La normalización completa (por ejemplo, tablas separadas por tipo de CI) aumentaría la complejidad de las consultas y el mantenimiento, sin beneficios significativos para el caso de uso del CMDB.
      - Los campos opcionales permiten flexibilidad para diferentes tipos de CIs, y las validaciones en el controlador (`ciController.js`) aseguran que los campos obligatorios por tipo (por ejemplo, `numero_serie` para Hardware) se proporcionen.
      - Esto simplifica las operaciones CRUD y reduce la cantidad de uniones (JOINs) necesarias en las consultas.
