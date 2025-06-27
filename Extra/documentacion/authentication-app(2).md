@@ -1,3 +1,7 @@
+[Regresar](./README.md)
+
+---
+
 # Authentication App
 
 This is a full-stack authentication application with Node.js (Express) backend and React (Vite) frontend, using JSON as a database and JWT for authentication. It now includes a retro/vintage design and new features: logout functionality and a welcome page after successful login.
@@ -593,3 +597,7 @@ export default ProtectedRoute;
 - The retro/vintage design uses the "Special Elite" font, a sepia-toned color palette, and subtle textures to evoke a nostalgic feel.
 - The `ProtectedRoute` component ensures that only authenticated users (with a valid token in `localStorage`) can access the welcome page.
 - If you encounter any issues with Tailwind CSS, ensure that `postcss` and `autoprefixer` are installed, and restart the Vite development server (`npm run dev`) after updating configuration files.
+
+
+---
+[Regresar](./README.md)

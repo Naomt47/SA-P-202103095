@@ -1,3 +1,9 @@
+
+| Nombre | carnet |
+| --- | --- |
+| Angely Naomi Marroquín Tapaz | 202103095 |
+
+
 # Documentación Técnica 
 
 A continuación se describe el desarrollo de una aplicación de autenticación fullstack utilizando Grok para la generación del código. La aplicación fue evolucionando a través de varias iteraciones para resolver problemas técnicos y añadir nuevas funcionalidades y estilos.
