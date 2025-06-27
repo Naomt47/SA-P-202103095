@@ -1,3 +1,16 @@
 {
-  "users": []
+  "users": [
+    {
+      "username": "Angely123",
+      "password": "$2b$10$N1FEmhWIq.jWCVdvKmCcLu5SXS35fdO7fCZqNMah81nZVbqiOIy5u"
+    },
+    {
+      "username": "angy",
+      "password": "$2b$10$9xE2oV4eGK52vctD5BUsp.8EqReW5MhoBYUxhTzt3VynSc.ZhwU32"
+    },
+    {
+      "username": "Naomi",
+      "password": "$2b$10$HJpf9DiWe6s5nE4QmHNWLe631rrNf1l0iYSc.cjqv31VwsT3TUdX."
+    }
+  ]
 }

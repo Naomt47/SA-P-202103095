@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const jsonfile = require('jsonfile');
 const router = express.Router();
+require('dotenv').config({ path: require('path').resolve(__dirname, '../../.env') });
 
 module.exports = (file) => {
   router.post('/register', async (req, res) => {
